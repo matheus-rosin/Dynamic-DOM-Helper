@@ -119,7 +119,7 @@ HTML('table', {
     }
 })
 ```
-There is still an third parameter possible. It's for
+There is still a third parameter possible. It's for
 ###  `custom elements`.
 (My intention is not tell if it is good or not, useful or not; it is, rather, give support...)
 As you should know, there are two types of custom elements: the completely new ones and the extended ones. So if your custom element is a new one (those that you make from `HTMLElement` API), you can use the function normally:
