@@ -90,7 +90,7 @@ let menu = HTML('aside', {
         },
         hide: function() {
             this.classList.remove('show')
-            // return to opacity = 1 and visibility = hidden, for example
+            // return to opacity = 0 and visibility = hidden, for example
         }
     }
 })
@@ -111,7 +111,7 @@ HTML('button', {
     }
 })
 ```
-Nice, right? To have an function linked to the object itself instead of call an external one. And you can indeed use this to record simple values:
+Nice, right? To have a function linked to the object itself instead of call an external one. And you can indeed use this to record simple values:
 ```javascript
 HTML('table', {
     m: {
