@@ -119,8 +119,9 @@ HTML('table', {
     }
 })
 ```
-And being needed, you can use this is some useful way.
-There is still an third parameter possible. It's for custom elements. (My intention is not tell if it is good or not, useful or not; it is, rather, give support...)
+There is still an third parameter possible. It's for
+###  `custom elements`.
+(My intention is not tell if it is good or not, useful or not; it is, rather, give support...)
 As you should know, there are two types of custom elements: the completely new ones and the extended ones. So if your custom element is a new one (those that you make from `HTMLElement` API), you can use the function normally:
 ```javascript
 HTML('product-box')
@@ -134,15 +135,3 @@ HTML('a', {
 // This will render <a is="internal-link"></a>
 ```
 And we're done! That's all for now. Enjoy it with :coffee:.
-
-
-
-
-
-
-
-
-
-
-
-
