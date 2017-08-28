@@ -135,4 +135,10 @@ HTML('a', {
 }, 'internal-link')
 // This will render <a is="internal-link"></a>
 ```
+#### Note
+If you know you'll use any dynamically inserted element afterwards, give it a name, like this:
+```javascript
+let myTitle = HTML('h1', { /* ... */ })
+```
+This way, when you need to access it, you can call it by its reference, instead of searching through all DOM tree. It's faster!
 And we're done! That's all for now. Enjoy it with :coffee:.
