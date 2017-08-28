@@ -36,7 +36,7 @@ HTML('input', {
 })
 // This will render <input type="range" min="0" max="9" step="1" name="myRangeInput">
 ```
-The `e` keys stands for **events**. It would be like this:
+The `e` key stands for **events**. It would be like this:
 ```javascript
 HTML('button', {
     e: {
@@ -125,6 +125,7 @@ There is still a third parameter possible. It's for
 As you should know, there are two types of custom elements: the completely new ones and the extended ones. So if your custom element is a new one (those that you make from `HTMLElement` API), you can use the function normally:
 ```javascript
 HTML('product-box')
+// This will render <product-box></product-box>
 ```
 And if your custom element is an extended one (those which you make from some built-in element, e.g. from `HTMLAnchorElement` API), you must use this way:
 ```javascript
