@@ -122,7 +122,7 @@ HTML('table', {
 :new:And lastly, the `s` key, which is for **inline style**. Thus:
 ```javascript
 let yellow = '#ebc546'
-HTML('footer, {
+HTML('footer', {
     s: {
         'width': '100vw',
         'height': '40px',
