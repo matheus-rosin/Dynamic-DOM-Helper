@@ -1,5 +1,5 @@
 # Dynamic-DOM-Helper
-Just a simple help to create elements dynamically
+Just a simple help to create elements dynamically.
 
 *To the lovers of vanilla Javascript!*
 
@@ -28,7 +28,7 @@ HTML('video')
 // &c.
 ```
 You can also include a second parameter, which should be an object that can contain four keys:
-### `a`, `e`, `c` and `m`.
+### `a`, `e`, `c`, `m` and `s`:new:.
 The `a` key stands for **attributes**. Thus you can easily set your attributes like this:
 ```javascript
 HTML('input', {
@@ -80,7 +80,7 @@ HTML('audio', {
     ]
 })
 ```
-And lastly, there is the `m` key, that means **methods**. This is intended to help make things organized. Imagine:
+There is the `m` key, that means **methods**. This is intended to help make things organized. Imagine:
 ```javascript
 let menu = HTML('aside', {
     m: {
@@ -118,6 +118,19 @@ HTML('table', {
         info: 'Table with customers info &c.'
     }
 })
+```
+:new:And lastly, the `s` key, which is for **inline style**. Thus:
+```javascript
+let yellow = '#ebc546'
+HTML('footer, {
+    s: {
+        'width': '100vw',
+        'height': '40px',
+        'position': 'fixed',
+        'background-color': yellow
+    }
+})
+//  This will render <footer style="width: 100vw; height: 40px; position: fixed; background-color: #ebc546;"></footer>
 ```
 There is still a third parameter possible. It's for
 ###  `custom elements`.
