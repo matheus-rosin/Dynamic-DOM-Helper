@@ -27,7 +27,7 @@ HTML('section')
 HTML('video')
 // &c.
 ```
-You can also include a second parameter, which should be an object that can contain four keys:
+You can also include a second parameter, which should be an object that can contain ~~four~~ five keys:
 ### `a`, `e`, `c`, `m` and `s`:new:.
 The `a` key stands for **attributes**. Thus you can easily set your attributes like this:
 ```javascript
