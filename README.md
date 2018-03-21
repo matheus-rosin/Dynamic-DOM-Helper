@@ -155,3 +155,18 @@ let myTitle = HTML('h1', { /* ... */ })
 ```
 This way, when you need to access it, you can call it by its reference, instead of searching through all DOM tree. It's faster!
 And we're done! That's all for now. Enjoy it with :coffee:.
+
+## Some examples!
+Run any portion in your console (remember include the `HTML` function) to see some cool stuff you can do with it:
+```javascript
+// I will introduce more with time; I promise :)
+
+// #1 Using closure in 'c' key:
+HTML('select', { c: (function(horarios) {
+    for (let i = 0; i < 24; i++) {
+        let h = ('0' + i.toString()).substr(-2), v = i * 2
+        horarios.push(HTML('option', { a: { 'value': v }, c: h + 'h00' }), HTML('option', { a: { 'value': ++v }, c: h + 'h30' }))
+    }
+    return horarios
+})([])})
+```
