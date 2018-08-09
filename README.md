@@ -80,6 +80,14 @@ HTML('audio', {
     ]
 })
 ```
+If you want to use ternary expressions to check if render a child or not, you can use `null` for telling it:
+```javascript
+HTML('div', {
+    c: something === otherThing ? 'Oh, nice!' : null
+})
+// If condition is true, it will render <div>Oh, nice!</div>
+// Otherwise, it will render <div></div>
+```
 There is the `m` key, that means **methods**. This is intended to help make things organized. Imagine:
 ```javascript
 let menu = HTML('aside', {
